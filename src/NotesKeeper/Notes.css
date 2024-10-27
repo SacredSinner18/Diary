@@ -1,0 +1,201 @@
+/* Global CSS */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styles */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEEEEE;
+    height: 100vh;
+  }
+  
+  /* General styles */
+  .app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app h1 {
+    text-align: center;
+    color: #232323;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* NoteForm styles */
+  .note-form {
+    transition: all 0.3s ease;
+    width: 100%;
+    padding: 20px;
+    background: rgb(182, 182, 221);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .note-form.editing {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .note-form input,
+  .note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .note-form textarea {
+    height: 100px; /* Increased height of the textarea */
+  }
+  
+  .note-form button {
+    padding: 5px 10px; /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    background: #4fd5d1;
+    color: white;
+    cursor: pointer;
+    transition: background 0.1s ease;
+  }
+  
+  .note-form button:hover {
+    background: rgb(99, 168, 217);
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+  }
+  
+  .cancel-button {
+    padding: 8px 16px;
+    background-color: #d11406 !important; /* Red color for cancel */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .cancel-button:hover {
+    background: #ff0303 !important;
+  }
+  
+  /* Search Bar Styles */
+  
+
+  .search-bar {
+    width: 35%;
+    margin-left: 65%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Note List Styles */
+  .note-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: #e9eeede7;
+  }
+  
+  .note {
+    background: rgb(230, 240, 240);
+    padding: 15px;
+    padding-left: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;  /* Forces long words to wrap onto a new line */
+    word-break: break-all;  /* Breaks the word if it's too long */
+  
+  }
+  
+  .note h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .note-content {
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  .note-timestamp {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  /* Button Styles */
+  .note-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .edit-button {
+    background: #28a745; /* Green */
+  }
+  
+  .edit-button:hover {
+    background: #218838;
+  }
+  
+  .delete-button {
+    background: #dc3545; /* Red */
+  }
+  
+  .delete-button:hover {
+    background: #c82333;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .app {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .note-form {
+      flex-direction: column;
+    }
+  }
+  
+  #heading{
+    color: #d11406;
+  }
