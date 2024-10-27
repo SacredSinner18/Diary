@@ -105,7 +105,9 @@ const AuthPage = () => {
 
   return (
     <div className="auth-page">
-      <h2>Notes Keeper App</h2>
+      <span>
+      <h1> <img className='logo' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSupwmCC0rO41tqGSaeTQNk6Kso9XgNNa89vg&s" alt="" />KEEPS NOTES</h1>
+      </span>
 
       {isLogin ? (
         <form onSubmit={handleLogin}>
@@ -202,6 +204,7 @@ const AuthPage = () => {
           <p>
             Already registered?{" "}
             <button
+              id="login-btn"
               type="button"
               className="toggle-btn"
               onClick={() => {

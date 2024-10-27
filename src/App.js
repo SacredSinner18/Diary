@@ -57,7 +57,7 @@ const App = () => {
         title: formTitle,
         content: formContent,
         createdAt: new Date().toLocaleString(),
-        userId: user.id, // Add the user ID to the note
+        //userId: user.id, // Add the user ID to the note
       };
       addNote(newNote);
     }
@@ -86,7 +86,6 @@ const App = () => {
             <div>
               <section>
                 <h1>thoda likh le bhai</h1>
-                <Logout /> {/* Add the Logout component */}
               </section>
 
               <section >
@@ -111,6 +110,10 @@ const App = () => {
                 editNote={handleEditNote} 
                 deleteNote={deleteNote} 
               />
+              </section>
+
+              <section>
+              <Logout /> {/* Add the Logout component */}
               </section>
              
             </div> : 
