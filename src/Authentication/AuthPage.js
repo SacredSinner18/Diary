@@ -36,11 +36,11 @@ const AuthPage = () => {
     localStorage.setItem('userID', userID);
   };
 
-  const redirectToHomePage = () => {
-    setTimeout(() => {
-      window.location.href = "/notes"; // Replace with actual route for homepage
-    }, 1000);
-  };
+  // const redirectToHomePage = () => {
+  //   setTimeout(() => {
+  //     window.location.href = "/notes"; // Replace with actual route for homepage
+  //   }, 1000);
+  // };
 
   const handleRegister = (e) => {
     e.preventDefault();

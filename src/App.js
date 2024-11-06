@@ -77,50 +77,50 @@ const App = () => {
   );
 
   return (
-    <div className="app">
-      <Routes>
-        <Route path="/" element={<AuthPage />} />
-        <Route 
-          path="/notes" 
-          element={user ? 
-            <div>
-              <section>
-                <h1>thoda likh le bhai</h1>
-              </section>
+      <div className="app">
+        <Routes >
+          <Route path="/" element={<AuthPage />} />
+          <Route 
+            path="/notes" 
+            element={user ? 
+              <div>
+                <section>
+                  <h1>thoda likh le bhai</h1>
+                </section>
 
-              <section >
-              <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> {/* Add SearchBar component */}
-              </section>
+                <section >
+                <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> {/* Add SearchBar component */}
+                </section>
 
-              <section>
-                <NoteForm 
-                title={formTitle}
-                content={formContent}
-                setFormTitle={setFormTitle}
-                setFormContent={setFormContent}
-                handleFormSubmit={handleFormSubmit}
-                handleCancelClick={resetForm}
-                isEditing={isEditing}
-              />
-              </section>
+                <section>
+                  <NoteForm 
+                  title={formTitle}
+                  content={formContent}
+                  setFormTitle={setFormTitle}
+                  setFormContent={setFormContent}
+                  handleFormSubmit={handleFormSubmit}
+                  handleCancelClick={resetForm}
+                  isEditing={isEditing}
+                />
+                </section>
 
-              <section>
-              <NoteList 
-                notes={filteredNotes} // Pass filtered notes to NoteList
-                editNote={handleEditNote} 
-                deleteNote={deleteNote} 
-              />
-              </section>
+                <section>
+                <NoteList 
+                  notes={filteredNotes} // Pass filtered notes to NoteList
+                  editNote={handleEditNote} 
+                  deleteNote={deleteNote} 
+                />
+                </section>
 
-              <section>
-              <Logout /> {/* Add the Logout component */}
-              </section>
-             
-            </div> : 
-            <Navigate to="/" />} 
-        />
-      </Routes>
-    </div>
+                <section>
+                <Logout /> {/* Add the Logout component */}
+                </section>
+              
+              </div> : 
+              <Navigate to="/" />} 
+          />
+        </Routes>
+      </div>
   );
 };
 
