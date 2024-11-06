@@ -37,3 +37,82 @@
   }
 }
 
+/* Base styles - Desktop  yeh h jo naya add kiye  h */
+.app {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Responsive adjustments */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .app section {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .Logout-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(6px + 2vmin);
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 25vmin;
+  }
+
+  .app section {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .Logout-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  /* Ensure form and note list stack vertically */
+  .app section,
+  .NoteForm,
+  .NoteList {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

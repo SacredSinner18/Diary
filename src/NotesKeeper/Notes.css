@@ -206,4 +206,67 @@
     color: #d11406;
   }
 
-  
+  /* Base styles for notes - Desktop  responsive naya code jo change kiya h wo h yeh */
+
+
+.NoteForm, .NoteList {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .NoteForm, .NoteList {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .NoteList-item {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .SearchBar {
+    margin: 15px 0;
+  }
+
+  .NoteForm-input, .SearchBar-input {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .NoteForm-button {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .NoteForm, .NoteList {
+    width: 90%;
+    padding: 8px;
+  }
+
+  .NoteList-item {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .SearchBar {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .SearchBar-input, .NoteForm-input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+  .NoteForm-button {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}
