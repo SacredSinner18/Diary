@@ -106,7 +106,7 @@ const AuthPage = () => {
   return (
     <div className="auth-page">
       <span>
-      <h1> <img className='logo' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSupwmCC0rO41tqGSaeTQNk6Kso9XgNNa89vg&s" alt="" />KEEPS NOTES</h1>
+      <h1> <img className='logo' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSupwmCC0rO41tqGSaeTQNk6Kso9XgNNa89vg&s" alt="" />Digital Diary</h1>
       </span>
 
       {isLogin ? (

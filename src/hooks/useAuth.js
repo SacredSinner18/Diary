@@ -5,3 +5,4 @@ import { AuthContext } from '../context/AuthContext'; // Ensure this path is cor
 export const useAuth = () => {
     return useContext(AuthContext); // This will now access the correct AuthContext
 };
+
