@@ -9,7 +9,7 @@ import './index.css'; // Global CSS styles
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/Diary'>
       <AuthProvider> {/* Wrap the App with AuthProvider */}
         <App />
       </AuthProvider>
